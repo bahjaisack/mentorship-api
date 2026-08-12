@@ -7,16 +7,17 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
+      "@": path.resolve(import.meta.dirname, "./src"),
     },
     dedupe: ['react', 'react-dom', '@tanstack/react-query'],
   },
   optimizeDeps: {
-    disabled: true,
+    noDiscovery: true,
+    include: [],
   },
   build: {
-    sourcemap: false,      
-    minify: 'esbuild',      
+    sourcemap: false,       
+    minify: 'esbuild',       
     chunkSizeWarningLimit: 1000,
     rollupOptions: {
       maxParallelFileOps: 2, 

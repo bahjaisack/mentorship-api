@@ -1,10 +1,10 @@
 import { useQuery } from '@tanstack/react-query'
 import { Loader } from 'lucide-react'
 import React, { useState } from 'react'
-import DashboardHeader from '../../components/dashboard/DashboardHeader'
-import DashboardWelcome from '../../components/dashboard/DashboardWelcome'
-import TaskForm from '../../components/task/TaskForm'
-import TaskList from '../../components/task/TaskList'
+import DashboardHeader from '../../components/Dashboard/DashboardHeader'
+import DashboardWelcome from '../../components/Dashboard/DashboardWelcome'
+import TaskForm from '../../components/Task/TaskForm'
+import TaskList from '../../components/Task/TaskList'
 import api from '../../lib/api/apiClient'
 
 const DashboardPage = () => {
