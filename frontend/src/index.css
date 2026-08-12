@@ -1,4 +1,9 @@
-@import "tailwindcss";
+@import "tailwindcss" source(none);
+@source "./**/*.js";
+@source "./**/*.jsx";
+@source "./**/*.ts";
+@source "./**/*.tsx";
+
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 @import "@fontsource-variable/geist";
