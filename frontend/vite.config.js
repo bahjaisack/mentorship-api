@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'
 import path from "path"
 import tailwindcss from "@tailwindcss/vite"
 
+// https://vite.dev
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   resolve: {
@@ -16,11 +17,8 @@ export default defineConfig({
     include: [],
   },
   build: {
-    sourcemap: false,       
+    sourcemap: false, 
     minify: 'esbuild',       
     chunkSizeWarningLimit: 1000,
-    rollupOptions: {
-      maxParallelFileOps: 2, 
-    }
   },
 })
