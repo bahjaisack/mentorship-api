@@ -2,7 +2,7 @@ import axios from 'axios'
 import { config } from 'dotenv';
 import useAuthStore from '../store/authStore';
 
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://mentorship-api-1-e9zq.onrender.com/api";
 const api =axios.create({
     baseURL: API_URL,
     headers: {
